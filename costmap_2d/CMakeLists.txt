@@ -5,6 +5,7 @@ find_package(catkin REQUIRED
         COMPONENTS
             cmake_modules
             dynamic_reconfigure
+            Eigen3
             geometry_msgs
             laser_geometry
             map_msgs
@@ -24,7 +25,7 @@ find_package(catkin REQUIRED
 
 find_package(PCL REQUIRED)
 remove_definitions(-DDISABLE_LIBUSB-1.0)
-find_package(Eigen3 REQUIRED)
+#find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system thread)
 include_directories(
     include
